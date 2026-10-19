@@ -35,15 +35,15 @@ github.comのCopilotの設定で、パブリック コードに一致する提�
 ### 3. Pythonの補完を止める
 
 1. CodespacesでCtrl+, を押して、設定を開きます
-2. 検索欄に `github.copilot.enable` と入れます
-3. 「GitHub › Copilot: Enable」の「項目の追加」を押し、項目に `python`、値に `false` を入れて「OK」を押します
+2. 上の「ユーザー」「リモート [Codespaces: …]」「ワークスペース」のうち、「リモート [Codespaces: …]」を選びます（このCodespaceだけに効きます）
+3. 検索欄に `github.copilot.enable` と入れます
+4. 「GitHub › Copilot: Enable」の「項目の追加」を押し、項目に `python` と入れます。値は選択式なので、`false` を選んで「OK」を押します
+5. 表に `python` と `false` の行が足されたことを確かめます
 
 ### 4. 補完が出ないことを確かめ、元に戻す
 
 1. `app/booklib/stats.py` を開き、コメントの下で `def ` と打ちます。灰色の提案が出ないことを確かめます（Chatは使えます）
-2. 設定に戻り、`python` の行の × を押して消します。もう一度 `def ` と打つと、提案が出ます
-
-> 補完を止めていても、Alt+\\ を押すと、その場で提案を出せます。
+2. 打った文字を消し、設定に戻って、`python` の行の右の × を押して消します。もう一度 `def ` と打つと、提案が出ます
 
 ### 5. 提案が出ないときの確かめ方
 

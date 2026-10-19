@@ -61,10 +61,10 @@ git switch main && git switch -c lesson/l4-2
 | `/new` | 新しいプロジェクトのひな形を作る |
 | `/compact` | これまでの会話を短くまとめて、続きを話す |
 
-`app/booklib/report.py` の `format_overdue` 関数を選択してから、次を送ります。
+`app/booklib/report.py` を開いてから、次を送ります（関数を選択してから `/tests` だけを送っても同じです）。
 
 ```text
-/tests
+/tests format_overdue
 ```
 
 テストのコードが出ます。ここでは読むだけにします（ファイルには入れません）。
