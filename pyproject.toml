@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "booklib"
+version = "0.1.0"
+description = "GH-300 講座のハンズオンで使う、小さな蔵書管理ライブラリ"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["app"]
+
+[tool.pytest.ini_options]
+# main のままで全部通るテストだけを置く。レッスンの確認用は lessons/ にあり、パスを指定して走らせる
+testpaths = ["tests"]
