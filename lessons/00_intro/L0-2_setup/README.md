@@ -23,6 +23,7 @@
 1. https://github.com/nomhiro/udemy-gh-300-handsonを開きます
 2. 右上の「Fork」を押し、「Create fork」を押します
 3. `https://github.com/<自分のアカウント>/udemy-gh-300-handson` が開けば完了です
+4. リポジトリの上のタブに「Issues」があるかを見ます。無いときは、「Settings」 → 「General」 → 「Features」の「Issues」にチェックを入れます（第4章で使います）
 
 ### 2. Codespacesを作る
 
@@ -63,7 +64,7 @@ pytest -q
 
 ### 6. Codespacesを止める・削除する
 
-使い終わったら止めます。止めている間は、使った時間に数えられません（保存の容量は数えられます）。
+使い終わったら止めます。Forkから作ったCodespaceは、自分のアカウントの無料枠（または支払い）を使います。止めている間は、使った時間に数えられません（保存の容量は数えられます）。
 
 1. https://github.com/codespacesを開きます
 2. 自分のCodespaceの右の「…」 → 「Stop codespace」で止めます

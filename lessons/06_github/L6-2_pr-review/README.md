@@ -46,8 +46,10 @@ git add -A && git commit -m "Add format_titles to report" && git push -u origin 
 ```
 
 1. Forkしたリポジトリをgithub.comで開くと、「Compare & pull request」が出ます。押します
-2. 「base」が自分のForkの `main` になっていることを確かめます（元の教材リポジトリではありません）
+2. 上の「base repository」を押し、`<自分のアカウント>/udemy-gh-300-handson` を選びます。「base」は `main` にします
 3. 「Create pull request」を押します
+
+> 「base repository」の最初の値は、元の教材リポジトリのことがあります。そのまま作ると、PRが元の教材リポジトリに届きます。必ず自分のForkを選んでください。
 
 ### 3. PRの要約を作る
 
