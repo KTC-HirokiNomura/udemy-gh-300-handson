@@ -1,6 +1,6 @@
 # L5-2 実践: CLIでスクリプトを作り、ファイルを扱う
 
-Copilot CLIに、蔵書のCSVを集計するスクリプトを作ってもらいます。非対話のモードで、許可したツールだけが動くことを確かめます。最後に、対話のモードでファイル名の一括変更を頼み、承認の前に何をするかを読みます。
+Copilot CLIに、蔵書のCSVを集計するスクリプトを作ってもらいます。非対話のモードで、承認の要る操作は、許可したものだけが動くことを確かめます。最後に、対話のモードでファイル名の一括変更を頼み、承認の前に何をするかを読みます。
 
 ## 前提
 
@@ -29,7 +29,7 @@ git switch main && git switch -c lesson/l5-2
 copilot -p "data/books.csv を読んで、著者ごとの冊数を多い順に表示する Python スクリプトを count_authors.py に作り、実行して上位3件を見せてください。"
 ```
 
-CSVを読むところまでは進みますが、ファイルを作る・`python` を実行するところで、次のように断られます。
+CSVを読むところまでは進みます（読むだけのコマンドは、承認なしで動きます）。ところが、ファイルを作る・`python` を実行するところで、次のように断られます。
 
 ```text
 Permission denied because no interactive user response was available.
@@ -44,9 +44,9 @@ copilot -p "data/books.csv を読んで、著者ごとの冊数を多い順に�
 ```
 
 - `--allow-tool 'write'`: ファイルを書くことを許します
-- `--allow-tool 'shell(python3)'`: `python3` で始まるコマンドの実行だけを許します
+- `--allow-tool 'shell(python3)'`: `python3` のコマンドの実行を許します（今回は `python3 count_authors.py` が動きました）
 
-`count_authors.py` が作られ、上位3件が出ます。`python` で実行しようとして断られ、`python3` でやり直すことがあります。「許したものだけが動く」ことが分かります。
+`count_authors.py` が作られ、上位3件が出ます。`python` で実行しようとして断られ、`python3` でやり直すことがあります。承認の要る操作は「許したものだけが動く」ことが分かります。
 
 > `--allow-all-tools` を付けると、すべてのツールを確かめずに許します。何をするか分からない依頼には使いません。
 
@@ -93,6 +93,12 @@ git status --short
 git reset -q && git checkout -- data/notes && git clean -fdq data/notes && rm -f count_authors.py
 ```
 
+変更が無く、元の5つの名前に戻ったことを確かめます。
+
+```bash
+git status --short; ls data/notes
+```
+
 ## 後片付け
 
 ```bash
@@ -101,6 +107,6 @@ git switch main && git branch -D lesson/l5-2
 
 ## まとめ
 
-- 非対話のモードでは、許可していない操作は断られます
-- `--allow-tool` で、許す操作を1つずつ決められます
+- 非対話のモードでは、承認の要る操作のうち、許可していないものは断られます
+- `--allow-tool` で、許す操作を決められます
 - 対話のモードでは、承認の前に、何をするかを読みます
