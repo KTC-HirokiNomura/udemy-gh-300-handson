@@ -131,7 +131,7 @@ Issue #2 に「次の版で対応します。」とコメントしてくださ�
 ## 後片付け
 
 1. github.comで、手順1で作った2つのIssueを開き、「Close issue」で閉じます
-2. GitHub MCPサーバーの設定（`~/.copilot/mcp-config.json`）は、第5章のCopilot CLIでも使うので残します。消すときは、`MCP: サーバーの一覧表示` から github を選び、サーバーを止めてから、ファイルの `github` の部分を消します
+2. GitHub MCPサーバーの設定（`~/.copilot/mcp-config.json`）は、残しておいてもかまいません。消すときは、`MCP: サーバーの一覧表示` から github を選んでサーバーを止め、ファイルの `github` の部分を消します
 
 ## まとめ
 
