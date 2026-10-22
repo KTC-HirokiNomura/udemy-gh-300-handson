@@ -43,7 +43,7 @@ Udemyの講座「GH-300 GitHub Copilot認定試験対策講座」の実践（ハ
 | プロンプト | [L3-2 ゼロショットとフューショットを比べる](lessons/03_prompt/L3-2_zero-few-shot/README.md) |
 | IDEの機能 | [L4-1 インラインの提案](lessons/04_ide/L4-1_inline/README.md)・[L4-2 Chatの使い方](lessons/04_ide/L4-2_chat/README.md)・[L4-3 エージェント モード](lessons/04_ide/L4-3_agent/README.md)・[L4-4 カスタム指示](lessons/04_ide/L4-4_instructions/README.md) |
 | Copilot CLI | [L5-1 CLIの基本](lessons/05_cli/L5-1_cli-basics/README.md)・[L5-2 CLIでスクリプトとファイル](lessons/05_cli/L5-2_cli-scripts/README.md) |
-| github.comの機能 | [L6-2 PRの要約とコード レビュー](lessons/06_github/L6-2_pr-review/README.md)・[L6-3 クラウド エージェント](lessons/06_github/L6-3_cloud-agent/README.md) |
+| github.comの機能 | [L6-1 github.comのChatとSpaces](lessons/06_github/L6-1_chat-spaces/README.md)・[L6-2 PRの要約とコード レビュー](lessons/06_github/L6-2_pr-review/README.md)・[L6-3 クラウド エージェント](lessons/06_github/L6-3_cloud-agent/README.md) |
 | プライバシーと管理 | [L8-1 フィルターとエディターの設定](lessons/08_privacy/L8-1_filters-settings/README.md) |
 
-ほかのレッスン（L4-5 MCP・L6-1 ChatとSpaces・第7章）の手順は、準備ができたものから追加します。
+ほかのレッスン（L4-5 MCP・第7章）の手順は、準備ができたものから追加します。
