@@ -6,14 +6,14 @@ github.comのCopilot Chatで、教材リポジトリについて質問します�
 
 - L0-2 を終えて、教材リポジトリをForkしていること
 - このレッスンはgithub.comだけで進めます。Codespacesは使いません
-- Spacesは、Copilot Freeを含むすべてのプランで使えます。Spaceの中の質問はChatと同じ扱いで、AIクレジットを使います
+- Spacesは、Copilot Freeを含むすべてのプランで使えます。Spaceの中の質問はChatの質問として数えられます（有料のプランでは、AIクレジットを使います）
 
 ## 進め方
 
 | 手順 | やること |
 |---|---|
 | 1 | github.comのCopilotを開く |
-| 2 | リポジトリを添付して質問する |
+| 2 | リポジトリを選んで質問する |
 | 3 | Spaceを作る |
 | 4 | Spaceに資料を足す |
 | 5 | Spaceの中で、同じ質問をする |
@@ -26,7 +26,7 @@ github.comのCopilot Chatで、教材リポジトリについて質問します�
 https://github.com/copilot
 ```
 
-### 2. リポジトリを添付して質問する
+### 2. リポジトリを選んで質問する
 
 入力欄の下の「All repositories」を押します。`udemy-gh-300-handson` を検索して、自分のForkを選びます。モードは「Ask」のままにします。
 
@@ -53,7 +53,7 @@ https://github.com/copilot/spaces
 | Space name | `booklib design` |
 | Owner | 自分のアカウント |
 
-名前には、半角の英数字・空白・記号だけが使えます。ダイアログの「Create space」を押すと、Spaceができます。個人のSpaceは、自分だけが見られます（Private）。
+名前は、半角の英数字で付けます（日本語の名前は、エラーになります）。ダイアログの「Create space」を押すと、Spaceができます。作ったばかりの個人のSpaceは、自分だけが見られます（Private）。あとから、ほかの人と共有することもできます。
 
 ### 4. Spaceに資料を足す
 
@@ -85,17 +85,17 @@ Spaceの画面の入力欄（How can I help you?）に、手順2と同じ質問�
 booklibの、本の貸出の決まりを教えてください。利用者1人が同時に何冊まで借りられますか？
 ```
 
-答えに「5冊まで」が出ることを確かめます。たとえば、根拠として `docs/design.md` とメモが挙がります。手順2では答えられなかった上限に、Spaceの資料から答えています。
+答えに「5冊まで」が出ることを確かめます。たとえば、根拠として `docs/design.md` とメモが挙がります。手順2の答えには出てこなかった、チームで決めた上限が、Spaceの資料から答えに出ています。
 
 この会話は、Spaceの「Conversations」のタブに残ります。
 
 ## 後片付け
 
 - Spaceは、ほかのレッスンでは使いません。残しておいても構いません
-- Spaceに足したファイルは、リポジトリのmainの最新を参照します。`docs/design.md` を直すと、Spaceの答えも変わります
 
 ## まとめ
 
-- github.comのCopilot Chatでは、リポジトリを添付して質問できます
+- github.comのCopilot Chatでは、リポジトリを選んで質問できます
 - Spaceには、リポジトリのファイル・メモなどの資料と、答え方の指示を集められます
 - Spaceの中の質問には、集めた資料に基づいて答えます
+- Spaceに足したGitHubのファイルは、リポジトリで変わると、Spaceの中身も自動で最新になります
