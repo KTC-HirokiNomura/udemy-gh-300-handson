@@ -53,7 +53,7 @@ git add -A && git commit -m "Add format_titles to report" && git push -u origin 
 ### 3. PRの要約を作る
 
 1. 説明欄（Add a description）のツールバーにあるCopilotのアイコンを押し、「Summary」を選びます
-2. 変更の要約が説明欄に入ります。英語で出ることがあります。読んで、変更の中身と合っているかを確かめます
+2. 変更の要約が説明欄に入ります。英語で出ます。読んで、変更の中身と合っているかを確かめます
 
 > PRを作ったあとでも、説明の右上の「…」→「Edit」から、同じアイコンで要約を作れます。
 
@@ -62,19 +62,17 @@ git add -A && git commit -m "Add format_titles to report" && git push -u origin 
 1. 右側の「Reviewers」にある「Copilot」の「Request」を押します。Copilotの横の「Balanced」は、レビューの深さの設定です。既定のままにします
 2. 「Create pull request」を押します
 
-PRの画面に「Copilot started reviewing」と出て、1〜2分でレビューが届きます。
+PRの画面に「Copilot started reviewing」と出て、数分でレビューが届きます。
 
 ### 5. 指摘を読み、受け入れるか決める
 
-レビューの最初に、まとめ（たとえば「Approval recommended」や「Changes recommended」）と、残っている指摘の一覧が出ます。指摘には、High・Medium・Lowの重さが付きます。その下に、コードの行に付いた指摘が並びます。たとえば、次のような指摘が付きます。
+レビューの最初に、まとめ（たとえば「Approval recommended」や「Changes recommended」）と、残っている指摘の一覧が出ます。指摘には、High・Medium・Lowの重さが付きます。その下に、コードの行に付いた指摘が並びます。
 
-- 「format_titlesに引数・戻り値の型ヒントと日本語のdocstringがなく、このPRで追加する規約を満たしていません」
-
-レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。指摘に直す案（Suggested changeset）が付いていれば、「Commit suggestion」→「Apply Suggestion」で、そのままPRのブランチにコミットできます。見送る指摘は、返信（Reply）に理由を書き、「Resolve conversation」で解決済みにします。このレッスンでは、まとめの下の「Fix with Copilot」は使いません。
+レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。指摘に直す案（Suggested changeset）が付いていれば、「Commit suggestion」→「Apply Suggestion」で、そのままPRのブランチにコミットできます。見送る指摘は、返信（Reply）に理由を書き、「Resolve conversation」で解決済みにします。このレッスンでは、「Fix with Copilot」「Fix batch with Copilot」は使いません。返信は、ほかの人のための記録です。Copilotは返信を読まず、返事もしません。
 
 ### 6. PRを閉じる
 
-このPRはマージせずに、PRの下の「Close pull request」で閉じます。
+このPRはマージせずに、PRの下の「Close pull request」で閉じます。閉じたあとに出る「Delete branch」は押さず、ブランチは次のコマンドで消します（押すと、`git push origin --delete` がエラーになります）。
 
 ```bash
 git switch main && git branch -D lesson/l6-2 && git push origin --delete lesson/l6-2
