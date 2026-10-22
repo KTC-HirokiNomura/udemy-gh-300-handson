@@ -12,9 +12,9 @@
 | 手順 | やること |
 |---|---|
 | 1 | ブランチを作り、決まりと変更を入れる |
-| 2 | pushしてPRを作る |
+| 2 | pushして、PRの作成画面を開く |
 | 3 | PRの要約を作る |
-| 4 | Copilotにレビューを頼む |
+| 4 | Copilotにレビューを頼み、PRを作る |
 | 5 | 指摘を読み、受け入れるか決める |
 | 6 | PRを閉じる |
 
@@ -39,37 +39,38 @@ EOF
 
 `format_titles` には、型ヒントもdocstringもありません。決まりに合わない変更です。
 
-### 2. pushしてPRを作る
+### 2. pushして、PRの作成画面を開く
 
 ```bash
 git add -A && git commit -m "Add format_titles to report" && git push -u origin lesson/l6-2
 ```
 
 1. Forkしたリポジトリをgithub.comで開くと、「Compare & pull request」が出ます。押します
-2. 上の「base repository」を押し、`<自分のアカウント>/udemy-gh-300-handson` を選びます。「base」は `main` にします
-3. 「Create pull request」を押します
+2. 上に「base repository」の欄があるときは、`<自分のアカウント>/udemy-gh-300-handson` を選びます。「base」は `main` にします
 
 > 「base repository」の最初の値は、元の教材リポジトリのことがあります。そのまま作ると、PRが元の教材リポジトリに届きます。必ず自分のForkを選んでください。
 
 ### 3. PRの要約を作る
 
-1. PRの説明（最初のコメント）の右上の「…」 → 「Edit」を押します
-2. 編集欄のツールバーにあるCopilotのアイコンを押し、「Summary」を選びます
-3. 変更の要約が説明欄に入ります。英語で出ることがあります。読んで、合っていれば「Update comment」で保存します
+1. 説明欄（Add a description）のツールバーにあるCopilotのアイコンを押し、「Summary」を選びます
+2. 変更の要約が説明欄に入ります。英語で出ることがあります。読んで、変更の中身と合っているかを確かめます
 
-### 4. Copilotにレビューを頼む
+> PRを作ったあとでも、説明の右上の「…」→「Edit」から、同じアイコンで要約を作れます。
 
-右側の「Reviewers」にある「Copilot」の「Request」を押します。
+### 4. Copilotにレビューを頼み、PRを作る
 
-「Copilot started reviewing」と出て、1〜2分でレビューが届きます。
+1. 右側の「Reviewers」にある「Copilot」の「Request」を押します。Copilotの横の「Balanced」は、レビューの深さの設定です。既定のままにします
+2. 「Create pull request」を押します
+
+PRの画面に「Copilot started reviewing」と出て、1〜2分でレビューが届きます。
 
 ### 5. 指摘を読み、受け入れるか決める
 
-たとえば、次のような指摘が付きます。
+レビューの最初に、まとめ（たとえば「Approval recommended」）と、残っている指摘の一覧が出ます。その下に、コードの行に付いた指摘が並びます。たとえば、次のような指摘が付きます。
 
 - 「format_titlesに引数・戻り値の型ヒントと日本語のdocstringがなく、このPRで追加する規約を満たしていません」
 
-レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。合わない指摘は、理由を書いて解決済みにします。
+レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。合わない指摘は、理由を書いて解決済みにします。このレッスンでは、まとめの下の「Fix with Copilot」は使いません。
 
 ### 6. PRを閉じる
 
