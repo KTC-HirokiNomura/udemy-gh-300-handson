@@ -37,6 +37,14 @@ def format_titles(books):
 EOF
 ```
 
+入ったかを確かめます。
+
+```bash
+git status --short
+cat .github/copilot-instructions.md
+tail -n 2 app/booklib/report.py
+```
+
 `format_titles` には、型ヒントもdocstringもありません。決まりに合わない変更です。
 
 ### 2. pushして、PRの作成画面を開く
@@ -45,8 +53,9 @@ EOF
 git add -A && git commit -m "Add format_titles to report" && git push -u origin lesson/l6-2
 ```
 
-1. Forkしたリポジトリをgithub.comで開くと、「Compare & pull request」が出ます。押します。出ないときは、「Pull requests」タブの「New pull request」を押し、「compare」で `lesson/l6-2` を選んでから「Create pull request」を押します
+1. Forkしたリポジトリをgithub.comで開くと、「Compare & pull request」が出ます。押します。出ないときは、「Pull requests」タブの「New pull request」を押し、「compare」で `lesson/l6-2` を選びます
 2. 上に「base repository」の欄があるときは、`<自分のアカウント>/udemy-gh-300-handson` を選びます。「base」は `main` にします
+3. 「Create pull request」を押します（「Compare & pull request」から来たときは、すでに作成画面です）
 
 > 「base repository」の最初の値は、元の教材リポジトリのことがあります。そのまま作ると、PRが元の教材リポジトリに届きます。必ず自分のForkを選んでください。
 
@@ -62,13 +71,13 @@ git add -A && git commit -m "Add format_titles to report" && git push -u origin 
 1. 右側の「Reviewers」にある「Copilot」の「Request」を押します。Copilotの横の「Balanced」は、レビューの深さの設定です。既定のままにします
 2. 「Create pull request」を押します
 
-PRの画面に「Copilot started reviewing」と出て、数分でレビューが届きます。
+PRの画面に「Copilot started reviewing」と出て、しばらくすると、レビューが届きます。
 
 ### 5. 指摘を読み、受け入れるか決める
 
 レビューの最初に、まとめ（たとえば「Approval recommended」や「Changes recommended」）と、残っている指摘の一覧が出ます。指摘には、High・Medium・Lowの重さが付きます。その下に、コードの行に付いた指摘が並びます。
 
-レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。指摘に直す案（Suggested changeset）が付いていれば、「Commit suggestion」→「Apply Suggestion」で、そのままPRのブランチにコミットできます。見送る指摘は、返信（Reply）に理由を書き、「Resolve conversation」で解決済みにします。このレッスンでは、「Fix with Copilot」「Fix batch with Copilot」は使いません。返信は、ほかの人のための記録です。Copilotは返信を読まず、返事もしません。
+レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。指摘に直す案（Suggested changeset）が付いていれば、「Commit suggestion」→「Apply Suggestion」で、そのままPRのブランチにコミットできます。見送る指摘は、返信（Reply）に理由を書き、「Resolve conversation」で解決済みにします。返信は、ほかの人のための記録です。Copilotは返信を読まず、返事もしません。このレッスンでは、「Fix with Copilot」「Fix batch with Copilot」は使いません。
 
 ### 6. PRを閉じる
 
