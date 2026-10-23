@@ -53,7 +53,7 @@ https://github.com/copilot/spaces
 | Space name | `booklib design` |
 | Owner | 自分のアカウント |
 
-名前は、半角の英数字で付けます（日本語の名前は、エラーになります）。ダイアログの「Create space」を押すと、Spaceができます。作ったばかりの個人のSpaceは、自分だけが見られます（Private）。あとから、ほかの人と共有することもできます。
+名前は、半角の英数字で付けます（日本語の名前は、エラーになります。前に同じ名前の Space を作っていると「Name has already been taken」と出るので、別の名前にします）。ダイアログの「Create space」を押すと、Spaceができます。作ったばかりの個人のSpaceは、自分だけが見られます（Private）。あとから、ほかの人と共有することもできます。
 
 ### 4. Spaceに資料を足す
 
