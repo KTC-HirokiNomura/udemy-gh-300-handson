@@ -29,7 +29,7 @@ git switch main && git switch -c lesson/l5-2
 copilot -p "data/books.csv を読んで、著者ごとの冊数を多い順に表示する Python スクリプトを count_authors.py に作り、実行して上位3件を見せてください。"
 ```
 
-CSVを読むところまでは進みます（読むだけのコマンドは、承認なしで動きます）。ところが、ファイルを作る・`python` を実行するところで、次のように断られます。
+CSVを読むところまでは進みます（CLIが読むだけと判断したコマンドは、承認なしで動きます）。ところが、ファイルを作る・`python` を実行するところで、次のように断られます。
 
 ```text
 Permission denied because no interactive user response was available.
@@ -76,7 +76,7 @@ data/notes のファイル名を、note-01.txt のように小文字・2桁の�
 | 選択肢 | 意味 |
 |---|---|
 | 1. Yes | 今回だけ実行する |
-| 2. Yes, and don't ask again for … | 同じ種類のコマンドは、このリポジトリでは次から聞かずに実行する |
+| 2. Yes, and don't ask again for … | 同じコマンド（今回なら `mv`）は、このリポジトリでは次から聞かずに実行する |
 | 3. No, and tell Copilot what to do differently | 実行せずに、やり方を言い直す |
 
 ここでは「1. Yes」を選びます。終わったら `/exit` で終了します。
