@@ -41,7 +41,7 @@ copilot --version
 copilot
 ```
 
-Codespacesでは、そのまま使える状態で起動することがあります（サインインを求められたときは、`/login` を送り、画面の指示に従ってブラウザーで承認します）。「GitHub CLI (gh) is not installed.」と出ても、Copilot CLIはそのまま使えます。起動したら、次を送ります。
+Codespacesでは、そのまま使える状態で起動することがあります（サインインを求められたときは、`/login` を送り、画面の指示に従ってブラウザーで承認します）。「GitHub CLI (gh) is not installed.」と出ても、Copilot CLIはそのまま使えます。L4-5 でGitHub MCPサーバーを足していると、CLIからつながらなかったという案内（Failed to connect to MCP server "github"）が出ることがありますが、この実践では使わないので、そのまま進めます。起動したら、次を送ります。
 
 ```text
 このリポジトリの app/booklib には、どんなモジュールがありますか？1行ずつ説明してください。
