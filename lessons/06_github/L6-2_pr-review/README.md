@@ -77,7 +77,7 @@ PRの画面に「Copilot started reviewing」と出て、しばらくすると�
 
 レビューの最初に、まとめ（たとえば「Approval recommended」や「Changes recommended」）と、残っている指摘の一覧が出ます。指摘には、High・Medium・Lowの重さが付きます。その下に、コードの行に付いた指摘が並びます。
 
-レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。指摘に直す案（Suggested changeset）が付いていれば、「Commit suggestion」→「Apply Suggestion」で、そのままPRのブランチにコミットできます。見送る指摘は、返信（Reply）に理由を書き、「Resolve conversation」で解決済みにします。返信は、ほかの人のための記録です。Copilotは返信を読まず、返事もしません。このレッスンでは、「Fix with Copilot」「Fix batch with Copilot」は使いません。
+レビューは、PRのブランチ（変更のある側）に置いた `.github/copilot-instructions.md` の決まりを読んで指摘します。指摘が正しければ、コードを直してpushします。指摘に直す案（Suggested changeset）が付いていれば、「Commit suggestion」→「Apply Suggestion」で、そのままPRのブランチにコミットできます。見送る指摘は、返信（Reply）に理由を書いて「Comment」を押し、「Resolve conversation」で解決済みにします。返信は、ほかの人のための記録です。Copilotは返信を読まず、返事もしません。このレッスンでは、「Fix with Copilot」「Fix batch with Copilot」は使いません。
 
 ### 6. PRを閉じる
 
