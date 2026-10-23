@@ -72,7 +72,7 @@ pytest -q lessons/04_ide/L4-1_inline
 2. 少し待つと、同じ関数の中で `books` を使っている行に、次の編集候補が出ます（行番号の横に矢印の印が出て、`books` を `items` に置き換える候補が小さな枠で出ます）
 3. Tabで候補の場所へ移り、もう一度Tabで受け入れます。受け入れないときはEscを押します
 
-> 次の編集候補が出ないときは、少し待ちます。それでも出ないときは、設定（Ctrl+,）で `github.copilot.nextEditSuggestions.enabled` が有効かを確かめます。
+> 次の編集候補が出ないときは、少し待つか、最後の1文字を消して打ち直します。それでも出ないときは、設定（Ctrl+,）で `github.copilot.nextEditSuggestions.enabled` が有効かを確かめます。
 
 ## 後片付け
 
