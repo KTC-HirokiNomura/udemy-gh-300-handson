@@ -71,7 +71,7 @@ copilot
 data/notes のファイル名を、note-01.txt のように小文字・2桁の番号・拡張子 .txt にそろえてください。
 ```
 
-名前を変えるコマンド（たとえば `mv "Note 1.txt" note-01.txt && …` や `git mv "Note 1.txt" note-01.txt && …`）を実行する前に、「Do you want to run this command?」と聞かれます。「どのファイルを、どの名前に変えるのか」を読んでから選びます。
+名前を変えるコマンド（たとえば `mv "Note 1.txt" note-01.txt && …` や `git mv "Note 1.txt" note-01.txt && …`）を実行する前に、「Do you want to run this command?」と聞かれます。「どのファイルを、どの名前に変えるのか」を読んでから選びます。先にファイルの一覧を読むコマンド（`ls` など）が動くこともあります。
 
 | 選択肢 | 意味 |
 |---|---|
@@ -87,7 +87,7 @@ data/notes のファイル名を、note-01.txt のように小文字・2桁の�
 git status --short
 ```
 
-`mv` で名前を変えた場合は、元の名前のファイルが消えた印（D）と、新しい名前のファイル（??）が並びます。`git mv` で変えた場合は、`R  data/notes/Note 1.txt -> data/notes/note-01.txt` のように、名前の変更（R）が並びます。どちらでも、`count_authors.py` は新しいファイル（??）です。確かめたら、元に戻します。
+`mv` で名前を変えた場合は、元の名前のファイルが消えた印（D）と、新しい名前のファイル（??）が並びます。`git mv` で変えた場合は、`R  "data/notes/Note 1.txt" -> data/notes/note-01.txt` のように、名前の変更（R）が並びます。どちらでも、`count_authors.py` は新しいファイル（??）です。確かめたら、元に戻します。
 
 ```bash
 git reset -q && git checkout -- data/notes && git clean -fdq data/notes && rm -f count_authors.py
