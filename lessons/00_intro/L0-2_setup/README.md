@@ -20,14 +20,14 @@
 
 ### 1. 教材リポジトリをForkする
 
-1. https://github.com/nomhiro/udemy-gh-300-handsonを開きます
+1. 教材リポジトリ <https://github.com/nomhiro/udemy-gh-300-handson> を開きます
 2. 右上の「Fork」を押し、「Create fork」を押します
 3. `https://github.com/<自分のアカウント>/udemy-gh-300-handson` が開けば完了です
 4. リポジトリの上のタブに「Issues」があるかを見ます。無いときは、「Settings」 → 「General」 → 「Features」の「Issues」にチェックを入れます（第4章で使います）
 
 ### 2. Codespacesを作る
 
-1. Forkしたリポジトリで、緑の「Code」ボタン → 「Codespaces」タブ → 「Create codespace on main」を押します
+1. Forkしたリポジトリで、緑の「Code」ボタン → 「Codespaces」タブ → 「Create codespace on main」を押します（すでにCodespaceがあるときは、一覧の右上の「＋」で作れます。一覧の行を押すと、そのCodespaceが開きます）
 2. ブラウザーの新しいタブでVS Codeが開きます。初回は準備に数分かかります（PythonとNode.js、テストの道具を入れています）
 3. 「このフォルダー内のファイルの作成者を信頼しますか?」と出たら、「フォルダーを信頼して続行」を押します（自分でForkした教材リポジトリです。信頼しないと、ターミナルが使えません）
 4. 左下に `Codespaces: ...` と出て、左のエクスプローラーに `app`・`tests`・`lessons` などが並べば完了です
@@ -44,7 +44,7 @@ pytest -q
 
 ### 4. Copilot Chatに1つ質問する
 
-1. Ctrl+Alt+IでChatを開きます（右側に出ます）
+1. Ctrl+Alt+I（MacではCtrl+Cmd+I）でChatを開きます（右側に出ます）。画面の上の、Chatのアイコンからも開けます
 2. 入力欄の下にある切り替え（`Copilot` と表示されているところ）を押し、「ローカル」（Local）を選びます
 3. 入力欄の左下のモードを「Ask」にします
 4. 次の質問を貼り付けて送ります
@@ -53,25 +53,25 @@ pytest -q
    このリポジトリの app/booklib は、何をするためのライブラリですか？3行で答えてください。
    ```
 
-5. 蔵書や貸出の管理について答えが返ってくれば、Copilotが使えています
+5. 蔵書や貸出の管理について答えが返ってくれば、Copilotが使えています。答えが返らず、サインインや有効化を求められたときは、画面の下の状態バーにあるCopilotのアイコンから「Use AI Features」を選び、GitHubのアカウントでサインインします
 
 > 入力欄の下の切り替えは、Chatがどこで動くかを選ぶものです。この講座の第4章では「ローカル」を使います。新しいチャットを開くと `Copilot` に戻ることがあるので、そのたびに選び直してください。
 
 ### 5. プランと使用量の画面を見る
 
 1. github.comの右上のアイコン → 「Settings」 → 左の「Copilot」を開きます
-2. いまのプランと、「AI credits」の使用量（何クレジット使ったか・いつリセットされるか）を見ます
+2. いまのプランと、「Usage」の「Included usage」（AIクレジットを何クレジット使ったか・いつリセットされるか）を見ます
 3. 下の「Features」と「Privacy」には、Copilotの機能ごとの設定が並んでいます（第8章で使います）
 
 ### 6. Codespacesを止める・削除する
 
 使い終わったら止めます。Forkから作ったCodespaceは、自分のアカウントの無料枠（または支払い）を使います。止めている間は、使った時間に数えられません（保存の容量は数えられます）。
 
-1. https://github.com/codespacesを開きます
+1. Codespacesの一覧 <https://github.com/codespaces> を開きます
 2. 自分のCodespaceの右の「…」 → 「Stop codespace」で止めます
 3. もう使わないときは、同じメニューの「Delete」で削除します。削除すると、pushしていない変更は消えます
 
-> 何もしないまま30分たつと、Codespaceは自動で止まります。
+> 何もしないまま、既定では30分たつと、Codespaceは自動で止まります。
 
 ## まとめ
 
