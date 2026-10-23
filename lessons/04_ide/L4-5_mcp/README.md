@@ -75,6 +75,8 @@ GitHub MCPサーバーを、VS CodeのCopilotに追加します。エージェ�
 5. ブラウザーのタブにGitHubの認可の画面が開きます。求められる権限を読んでから、緑の「Authorize Visual-Studio-Code」を押します
 6. VS Codeに戻ると、右下に「github.com にサインインしています...」と出ます。消えるまで待ちます
 
+前に同じサーバーで信頼と認可を済ませていると、3〜6は出ずに、そのまま起動することがあります。
+
 出力パネルの「MCP: github」に「Discovered 49 tools」のように出たら、つながっています（ツールの数は変わることがあります）。
 
 > 右下の通知の「キャンセル」を押すと、サインインが取り消されます。出力に「401 … missing required Authorization header」と出たら、手順3の1からやり直します。
