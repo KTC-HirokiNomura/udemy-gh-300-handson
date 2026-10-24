@@ -24,8 +24,8 @@ class Catalog:
         return list(self._books)
 
     def find_by_title(self, title: str) -> list[Book]:
-        # 書名の部分一致で探す
-        return [book for book in self._books if title in book.title]
+        title = title.casefold()
+        return [book for book in self._books if title in book.title.casefold()]
 
     def search(self, keywords: list[str]) -> list[Book]:
         # 書名・著者・タグのどれかにキーワードを含む本を探す
